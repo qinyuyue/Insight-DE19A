@@ -5,7 +5,7 @@ When visitors go to a landmark spot, they may want to take good photo but just b
 
 ## Data 
 Source 1. Instagram API (only the data before April 2018)<br>
-Source 2. European Cities 1M dataset (with geotags)
+Source 2. European Cities 1M dataset (with geotags). http://image.ntua.gr/iva/datasets/ec1m/
 
 ## Schema 
 When user A is in place B, webpage will located him. With this location, app will generate a list of geotag used on instagram. The webpage will ask Instagram API to get recently 1 month image with these geotag. Then filter the scenry photos with specific hashtag. Display these image data to user. 
