@@ -1,5 +1,5 @@
 # Insight-DE19A
-## Inteseting Photo from Vistor's Value 
+## Inteseting Photo from Vistor's View 
 ## Business Value
 When visitors go to a landmark spot, they may want to take good photo but just boring photo. This webpage can provide most recently popular scenery photos on instagram with same place. So now visitor may get new idea about their new photos.
 
