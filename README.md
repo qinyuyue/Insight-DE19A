@@ -17,4 +17,4 @@ S3, Kafka, (maybe neo4j)
 heavy image transmission. Image Filter. Image classfication. 
 
 ## MVP 
-A webpage display these data. 
+A webpage display these filtted images. 
