@@ -11,7 +11,7 @@ Source 2. European Cities 1M dataset (with geotags)
 When user A is in place B, webpage will located him. With this location, app will generate a list of geotag used on instagram. The webpage will ask Instagram API to get recently 1 month image with these geotag. Then filter the scenry photos with specific hashtag. Display these image data to user. 
 
 ## Tech Stack
-S3, Kafka
+S3, Kafka, (maybe neo4j)
 
 ## Engineer Challenge 
 heavy image transmission. Image Filter. Image classfication. 
