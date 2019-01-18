@@ -4,7 +4,7 @@
 When visitors go to a landmark spot, they may want to take good photo but just boring photo. This webpage can provide most recently popular scenery photos on instagram with same place. So now visitor may get new idea about their new photos.
 
 ## Data 
-Source 1. Instagram API (only the data before April 2018)
+Source 1. Instagram API (only the data before April 2018)<br>
 Source 2. European Cities 1M dataset (with geotags)
 
 ## Schema 
