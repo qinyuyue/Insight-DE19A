@@ -18,7 +18,7 @@ New York yellow taxi transaction data: https://registry.opendata.aws/nyc-tlc-tri
 Precipitation data: https://www.ncdc.noaa.gov/cdo-web/
 
 ## Tech Stack
-![alt text](https://github.com/qinyuyue/RainyRide/pipeline.png)
+![alt text](https://github.com/qinyuyue/RainyRide/blob/master/pipeline.png)
 <br>
 Basically, New York yellow taxi transaction dataset is an open source on aws. The precipitation data was uploaded to aws. Then Spark was choosed for batch processing. Why Spark? An iterative algorithm (DBSCAN) is the most time-consuming part in this computing process. The running time is much shorter in Spark than Hadoop. After the statistical result got, it was stored at MySQL, which is easy to handle relational table. Later, the result was display on web page, which built by Flask and Leaflet.    
 
