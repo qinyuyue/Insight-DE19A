@@ -6,7 +6,7 @@ It's hard to get a ride at rainy day. It's not only because the bad traffic, but
 ## User Interface
 ![alt text](https://github.com/qinyuyue/RainyRide/blob/master/pic/main_page.png)
 <br>
-When user click the point, it will the locations, predicted price and predicted distance of that point.
+When user click the point, web will show the locations, predicted price and predicted distance of that point.
 ## Data
 <pre>
 | ------------------------------------------------------- | ----- | ---------------------------------------------------- |<br>
@@ -26,5 +26,5 @@ Precipitation data: https://www.ncdc.noaa.gov/cdo-web/
 Basically, New York yellow taxi transaction dataset is an open source on aws. The precipitation data was uploaded to aws. Then Spark was choosed for batch processing. Why Spark? An iterative algorithm (DBSCAN) is the most time-consuming part in this computing process. The running time is much shorter in Spark than Hadoop. After the statistical result got, it was stored at MySQL, which is easy to handle relational table. Later, the result was display on web page, which built by Flask and Leaflet.    
 <br>
 ## Cluster Structure
-One cluster with 6 instance.
+One cluster with 6 instance.<br>
 Flask node.
