@@ -4,7 +4,7 @@
 It's hard to get a ride at rainy day. It's not only because the bad traffic, but also there are some potential passengers only take ride in rainy day. Where are they? This project want to predict the hotspot of passengers in rainy day, also provide an insight of potential profit and distance for drivers, based on historical taxi transaction data and precipitation data.
 
 ## User Interface
-![alt text](https://github.com/qinyuyue/RainyRide/main_page.png)
+![alt text](https://github.com/qinyuyue/RainyRide/blob/master/main_page.png)
 ## Data
 | ------------------------------------------------------- | ----- | ---------------------------------------------------- |
 |                           Datasets                      |  Size |                      File Format                     |
