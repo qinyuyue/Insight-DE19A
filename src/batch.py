@@ -6,6 +6,7 @@ from sklearn.cluster import DBSCAN
 import numpy as np
 from pyspark.sql.functions import monotonically_increasing_id
 from pyspark.sql import functions as func
+import pyspark
 
 def load_df(file, columns):
     """load csv file as dataframe
@@ -87,22 +88,17 @@ def main():
     rain_file = "s3a://ny-taxi/cleaned_rain.csv"
     taxi_columns = ["pickup_datetime", "pickup_latitude", "pickup_longitude", "total_amount"]
     rain_columns = ["DATE", "HPCP"]
-
     df1 = load_df(taxi, taxi_columns)
     df1 = time2hour(df1)
-
     df2 = load_df(rain_file, rain_column)
-
     joined = join2(df1,df2)
-
     rounded = joined.withColumn("r_lat", func.round(df1["Start_Lat"], 3))
     rounded = rounded.withColumn("r_lon", func.round(df1["Start_Lon"], 3))
     clusterd = cluster_loc(rounded)
-
     output =  clusterd.groupby('r_lat', 'r_lon').agg(func.mean('Total_Amt'),func.count('Total_Amt'))
     indexs = output.withColumn("id", monotonically_increasing_id())
     indexs.write.format("jdbc").option('url', 'jdbc:mysql://localhost/rainyride').option('driver','com.mysql.cj.jdbc.Driver').option("dbtable", "op_stats").option("user", "root").option("password", "rainyride").mode('overwrite').save()
 
 
 if __name__ == '__main__':
-  main()
+    main()
